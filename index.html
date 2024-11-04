@@ -1,115 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Title</title>
 <style>
-  .menu{
-  	display: flex;
-  	justify-content: center;
-    align-items: center;
+  /* General Page Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header */
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
   }
   
+  /* Main Heading */
+  h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+
+  /* Navigation Menu */
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #444;
+    padding: 10px;
+  }
+  
+  .menu a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .menu a:hover {
+    background-color: #888;
+  }
+
+  /* Buttons */
   .button1 {
-  	font-size: 35px;
-  	text-align: center;
-  	float: left;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 30%;
-    margin: 10px;
-    background-color: lightgreen;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
   }
   
   .button1:hover {
-  	font-size: 35px;
-  	color: white;
-  	text-align: center;
-  	float: left;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    width: 30%;
-    margin: 10px;
-    background-color: darkgreen;
-  }
-  
-  
-  h1{
-  	text-align: center;
-  	padding: 10px;
-  	float: inline;
-
+    background-color: #2E8B57;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
   }
 
+  /* Content Sections */
+  section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9em;
+  }
+
+  /* About Me Section */
+  #about-me {
+    background-color: #e8f4f8;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Lists */
+  ul {
+    padding-left: 20px;
+  }
 </style>
-<title>Page Title</title>
 </head>
 <body>
-  <div class = "menu">
-    <p class = "button1">Home</p>
-    <p  class = "button1"><a href = "#about-me">About Me</a></p>
-    <p class = "button1">Stuff</p>
-  </div>
-  <br>
-  <h1>Do you want to see Paris?</h1>
-  <h2>This is your chance</h2>
 
-  <img src = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/07/a8/2c/caption.jpg" width = "80%">
-  <header>
-        <h1>Paris: The City of Light</h1>
-    </header>
+<header>
+  <h1>Paris: The City of Light</h1>
+</header>
 
-    <section>
-        <h2>Overview</h2>
-        <p>Paris, the capital city of France, is one of the most iconic cities in the world. Known for its stunning architecture, vibrant culture, and rich history, Paris attracts millions of visitors every year. From world-famous landmarks like the Eiffel Tower to charming cafes on every corner, Paris offers a unique blend of old-world charm and modern sophistication.</p>
-    </section>
+<div class="menu">
+  <a href="#home" class="button1">Home</a>
+  <a href="#about-me" class="button1">About Me</a>
+  <a href="#landmarks" class="button1">Famous Landmarks</a>
+</div>
 
-    <section>
-        <h2>Famous Landmarks</h2>
-        <ul>
-            <li><strong>Eiffel Tower:</strong> The most recognizable symbol of Paris, constructed in 1889.</li>
-            <li><strong>Louvre Museum:</strong> The world's largest art museum, home to the Mona Lisa.</li>
-            <li><strong>Notre-Dame Cathedral:</strong> A masterpiece of Gothic architecture, known for its iconic facade.</li>
-            <li><strong>Champs-Élysées:</strong> A grand avenue, lined with theaters, cafes, and luxury shops.</li>
-            <li><strong>Sacré-Cœur Basilica:</strong> Situated on Montmartre hill, offering panoramic views of the city.</li>
-        </ul>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Eiffel Tower in Paris">
-    </section>
+<h1>Do you want to see Paris?</h1>
+<h2>This is your chance</h2>
 
-    <section>
-        <h2>Cultural Highlights</h2>
-        <p>Paris is renowned for its artistic heritage, having been home to famous artists such as Claude Monet, Pablo Picasso, and Henri Matisse. It is also known for fashion, as it hosts the prestigious Paris Fashion Week. The city's theaters, operas, and music festivals further cement Paris as a global cultural hub.</p>
-    </section>
+<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/07/a8/2c/caption.jpg" width="80%" alt="View of Paris">
 
-    <section>
-        <h2>Parisian Cuisine</h2>
-        <p>Paris offers a gastronomic experience like no other. From freshly baked croissants to delicate macarons, the city’s patisseries are a feast for the senses. Traditional French dishes like coq au vin, escargots, and duck confit can be enjoyed in cozy bistros and Michelin-starred restaurants alike. And no visit to Paris would be complete without sampling fine wines and cheeses.</p>
-    </section>
+<section id="overview">
+  <h2>Overview</h2>
+  <p>Paris, the capital city of France, is one of the most iconic cities in the world. Known for its stunning architecture, vibrant culture, and rich history, Paris attracts millions of visitors every year. From world-famous landmarks like the Eiffel Tower to charming cafes on every corner, Paris offers a unique blend of old-world charm and modern sophistication.</p>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Paris Travel Guide. All Rights Reserved.</p>
-    </footer>
-  <h1 id = "about-me">About Me</h1>
+<section id="landmarks">
+  <h2>Famous Landmarks</h2>
+  <ul>
+    <li><strong>Eiffel Tower:</strong> The most recognizable symbol of Paris, constructed in 1889.</li>
+    <li><strong>Louvre Museum:</strong> The world's largest art museum, home to the Mona Lisa.</li>
+    <li><strong>Notre-Dame Cathedral:</strong> A masterpiece of Gothic architecture, known for its iconic facade.</li>
+    <li><strong>Champs-Élysées:</strong> A grand avenue, lined with theaters, cafes, and luxury shops.</li>
+    <li><strong>Sacré-Cœur Basilica:</strong> Situated on Montmartre hill, offering panoramic views of the city.</li>
+  </ul>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Eiffel Tower in Paris">
+</section>
+
+<section id="culture">
+  <h2>Cultural Highlights</h2>
+  <p>Paris is renowned for its artistic heritage, having been home to famous artists such as Claude Monet, Pablo Picasso, and Henri Matisse. It is also known for fashion, as it hosts the prestigious Paris Fashion Week. The city's theaters, operas, and music festivals further cement Paris as a global cultural hub.</p>
+</section>
+
+<section id="cuisine">
+  <h2>Parisian Cuisine</h2>
+  <p>Paris offers a gastronomic experience like no other. From freshly baked croissants to delicate macarons, the city’s patisseries are a feast for the senses. Traditional French dishes like coq au vin, escargots, and duck confit can be enjoyed in cozy bistros and Michelin-starred restaurants alike. And no visit to Paris would be complete without sampling fine wines and cheeses.</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Paris Travel Guide. All Rights Reserved.</p>
+</footer>
+
+<section id="about-me">
+  <h1>About Me</h1>
   <h2>Professional Background & Teaching Focus</h2>
-    <ul>
-        <li>Degrees:
-            <ul>
-                <li>BS in Business Administration</li>
-                <li>MS in Applied Computer Science (Frostburg State University)</li>
-                <li>PhD in Leadership (Educational Administration)</li>
-            </ul>
-        </li>
-        <li>18 years of industry experience (SQL, R, Warehouse Management Systems).</li>
-        <li>Currently teaching:
-            <ul>
-                <li>Foundations of Cybersecurity</li>
-                <li>Fundamentals of Computer Science</li>
-                <li>AP Computer Science Principles</li>
-                <li>Cybersecurity Capstone</li>
-                <li>ITSC 1305</li>
-            </ul>
-        </li>
-        <li>Coaches UIL Computer Science and sponsors TSA Game Design.</li>
-        <li>Teaches interactive fiction using C# (sequence, selection, iteration).</li>
-    </ul>
+  <ul>
+    <li>Degrees:
+      <ul>
+        <li>BS in Business Administration</li>
+        <li>MS in Applied Computer Science (Frostburg State University)</li>
+        <li>PhD in Leadership (Educational Administration)</li>
+      </ul>
+    </li>
+    <li>18 years of industry experience (SQL, R, Warehouse Management Systems).</li>
+    <li>Currently teaching:
+      <ul>
+        <li>Foundations of Cybersecurity</li>
+        <li>Fundamentals of Computer Science</li>
+        <li>AP Computer Science Principles</li>
+        <li>Cybersecurity Capstone</li>
+        <li>ITSC 1305</li>
+      </ul>
+    </li>
+    <li>Coaches UIL Computer Science and sponsors TSA Game Design.</li>
+    <li>Teaches interactive fiction using C# (sequence, selection, iteration).</li>
+  </ul>
+</section>
 
 </body>
-
 </html>
-
